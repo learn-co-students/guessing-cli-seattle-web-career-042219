@@ -18,7 +18,7 @@ def run_guessing_game
     guess = gets.chomp
     computer = computer_guess
     if guess.is_i?
-      if guess == computer
+      if guess.to_i == computer
         puts "You guessed the correct number!"
 
       else
